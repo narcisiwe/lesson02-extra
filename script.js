@@ -1,13 +1,11 @@
-let num = 266219;
-let sum = 1;
-let sum2;
-let sum3;
+const num = 266219;
 
+const str = num.toString();
+const prdct = str[0] * str[1] * str[2] * str[3] * str[4] * str[5];
+//console.log(prdct);
 
-while (num > 0) {
-    sum *= num % 10;
-    num = Math.floor(num/10);
-}
-sum2 = sum ** 3;
-sum3 = sum2.toString();
-console.log(sum3.substring(0, 2));
+const prdctX3 = prdct**3;
+//console.log(prdctX3);
+
+const digits = prdctX3.toString();
+console.log(digits.substring(0, 2));
